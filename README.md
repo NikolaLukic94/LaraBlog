@@ -1,0 +1,1 @@
+<p>Project created by following Laracast's "Let's build a forum" tutorial</p>
