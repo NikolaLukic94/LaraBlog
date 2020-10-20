@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Reply;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class ReplyFactory extends Factory
 {
@@ -28,7 +29,7 @@ class ReplyFactory extends Factory
             'thread_id' => function () {
                 return \App\Models\Thread::factory()->create()->id; 
             },
-            'body' => $this->faker->paragraph
+            'body' => 'test body'//$this->faker->sentence
         ];
     }
 }

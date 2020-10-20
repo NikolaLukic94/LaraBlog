@@ -14,7 +14,7 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        //
+        return view('threads.index')->with('threads', Thread::all());
     }
 
     /**
@@ -46,7 +46,7 @@ class ThreadController extends Controller
      */
     public function show(Thread $thread)
     {
-        //
+        return view('threads.show')->with('thread', $thread);
     }
 
     /**
